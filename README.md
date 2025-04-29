@@ -60,6 +60,7 @@ Donations are definitely _not required_, they are appreciated.  If you'd like to
 * [better init](./features/better-init/README.md)
 * [better root](./features/better-root/README.md) home directory
 * [Cartographer](./features/cartographer/README.md) support
+* [Filament-Sync](https://github.com/HurricanePrint/Filament-Sync) Sync custom filaments to printer for use with RFID tags
 * installs [Entware](https://github.com/Entware/Entware)
 * updated [Fluidd](./features/fluidd/README.md)
 * updated [Moonraker](./features/moonraker/README.md)
@@ -81,7 +82,7 @@ Sadly, many of the K2 beds resemble a taco or valley.  In the [bed_leveling](bed
 * [@Guilouz](https://github.com/Guilouz) - standing on the shoulders of giants
 * [@stranula](https://github.com/stranula)
 * [@juliosueiras](https://github.com/juliosueiras)
-
+* [@HurricanePrint](https://github.com/HurricanePrint)
 * Moonraker - [https://github.com/Arksine/moonraker](https://github.com/Arksine/moonraker)
 * Klipper - [https://github.com/Klipper3d/klipper](https://github.com/Klipper3d/klipper)
 * Fluidd - [https://github.com/fluidd-core/fluidd](https://github.com/fluidd-core/fluidd)
