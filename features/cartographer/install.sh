@@ -57,7 +57,7 @@ echo "I: installing cartographer"
 # install usb-serial bridge
 mkdir -p /mnt/UDISK/bin
 #
-# ln -sf  ${SCRIPT_DIR}/usb_bridge /mnt/UDISK/bin/usb_bridge
+ln -sf  ${SCRIPT_DIR}/usb_bridge /mnt/UDISK/bin/usb_bridge
 # Added patched wrapper for non- CDC-ACM compliant kernel
 # If you're doing kernel mods, this wont be an issue for you to workaround.
 ln -sf  ${SCRIPT_DIR}/optional_mcu/usb_bridge_wrapper.sh /mnt/UDISK/bin/cartographer_wrapper.sh 
