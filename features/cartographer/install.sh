@@ -56,8 +56,13 @@ echo "I: installing cartographer"
 
 # install usb-serial bridge
 mkdir -p /mnt/UDISK/bin
-ln -sf  ${SCRIPT_DIR}/usb_bridge /mnt/UDISK/bin/usb_bridge
-chmod +x /mnt/UDISK/bin/usb_bridge
+#
+# ln -sf  ${SCRIPT_DIR}/usb_bridge /mnt/UDISK/bin/usb_bridge
+# Added patched wrapper for non- CDC-ACM compliant kernel
+# If you're doing kernel mods, this wont be an issue for you to workaround.
+ln -sf  ${SCRIPT_DIR}/optional_mcu/usb_bridge_wrapper.sh /mnt/UDISK/bin/cartographer_wrapper.sh 
+
+chmod +x /mnt/UDISK/bin/cartographer_wrapper.sh
 ln -s ${SCRIPT_DIR}/cartographer.sh /mnt/UDISK/bin/cartographer.sh
 ln -sf ${SCRIPT_DIR}/cartographer.init /etc/init.d/cartographer
 ln -sf ${SCRIPT_DIR}/cartographer.init /opt/etc/init.d/S50cartographer
@@ -96,6 +101,18 @@ cd -
 # replace the bed mesh
 rm -fr ~/klipper/klippy/extras/bed_mesh.py*
 ln -sf ${SCRIPT_DIR}/bed_mesh.py ~/klipper/klippy/extras/bed_mesh.py
+
+# Optional MCU Addon for Cartographer probes that disconnect during printing.
+# remove existing files : should make this a backup. eh sock reset will do the trick.
+rm -fr ~/klipper/klippy/clocksync.py*
+rm -fr ~/klipper/klippy/extras/homing.py*
+rm -fr ~/klipper/klippy/mcu.py*
+rm -fr ~/klipper/klippy/serialhdl.py*
+# now link the relevant .py files back into klipper
+ln -sf ${SCRIPT_DIR}/optional_mcu/clocksync.py ~/klipper/klippy/clocksync.py
+ln -sf ${SCRIPT_DIR}/optional_mcu/homing.py ~/klipper/klippy/extras/homing.py
+ln -sf ${SCRIPT_DIR}/optional_mcu/mcu.py ~/klipper/klippy/mcu.py
+ln -sf ${SCRIPT_DIR}/optional_mcu/serialhdl.py ~/klipper/klippy/serialhdl.py
 
 # restart klipper
 /etc/init.d/klipper restart
