@@ -76,10 +76,10 @@ Added `--prefer-binary` to `features/moonraker.sh`
 
 ## Non-Critical Cartographer MCU
 Allows `[mcu scanner]` within Cartographer.cfg to be defined as optional with the following flag: `is_non_critical`.
+
 Massive Thanks to [Jacob10383](https://github.com/Jacob10383) for [This](https://github.com/Jacob10383/Printer/commit/670d405f1a6d40760fe4e9c74c87a0100c1135a4#diff-45f5ce587b170586644c8277b076bd26669b8262c464575c9e20f15f665acead) commit.
-_USE_WITH_CAUTION_
-Set this value to `True` to allow disconnects without the printer stopping.
-_USE WITH CAUTION_ 
+
+Set this value to `is_non_critical: true` to allow disconnects without the printer stopping.
 
 
 
