@@ -3,7 +3,7 @@
 START=50
 USE_PROCD=1
 DEPEND=fstab
-PROG=/mnt/UDISK/bin/usb_bridge
+PROG=/mnt/UDISK/bin/cartographer_wrapper.sh
 
 start_service() {
     procd_open_instance
