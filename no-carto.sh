@@ -26,3 +26,4 @@ install_feature macros/start_print
 install_feature macros/overrides
 install_feature webcam-fix
 install_feature resonance-tester
+install_feature filament-sync-service

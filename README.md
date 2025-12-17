@@ -65,6 +65,9 @@ Donations are definitely _not required_, however they are always appreciated.  I
 
 # Latest Added Features:
 
+## Filament-Sync
+Added Filament-Sync-Service to sync filament profiles from slicers for use with and without custom RFID tags. Better labeling and organization than stock Creality Print syncing. Also supports OrcaSlicer. Requires PC side setup. [Instructions here](https://github.com/HurricanePrint/Filament-Sync)  
+
 ## Resonance Tester
 Added the Resonance Tester code from Jacobean. Here's it's [Readme](https://github.com/campbellfabrications/k2-improvements/blob/main/features/resonance-tester/README.md) file.
 
@@ -105,6 +108,7 @@ Sadly, many of the K2 beds resemble a taco or valley.  In the [bed_leveling](bed
 * [@Guilouz](https://github.com/Guilouz) - standing on the shoulders of giants
 * [@stranula](https://github.com/stranula)
 * [@juliosueiras](https://github.com/juliosueiras)
+* [@HurricanePrint](https://github.com/HurricanePrint) - Filament-Sync
 
 * Moonraker - [https://github.com/Arksine/moonraker](https://github.com/Arksine/moonraker)
 * Klipper - [https://github.com/Klipper3d/klipper](https://github.com/Klipper3d/klipper)
