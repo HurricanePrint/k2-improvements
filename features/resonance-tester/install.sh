@@ -13,7 +13,7 @@ ln -sf ${SCRIPT_DIR}/resonance_tester.py \
 ln -sf ${SCRIPT_DIR}/resonance-tester.cfg \
     ~/printer_data/config/custom/resonance-tester.cfg
 # add the resonance-tester.cfg macro to the printer.cfg file
-    python ${SCRIPT_DIR}/../../../scripts/ensure_included.py \
+    python ${SCRIPT_DIR}/../../scripts/ensure_included.py \
     ~/printer_data/config/printer.cfg custom/resonance-tester.cfg
 
 /etc/init.d/klipper restart
