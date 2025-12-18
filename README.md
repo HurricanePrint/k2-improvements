@@ -1,4 +1,4 @@
-# K2 Improvements Script Maintainers Fork
+# K2 Plus Improvements Script Maintainers Fork
 
 JaminCollins has archived his repo, I have the cartographer as well as use the k2-improvements script on my K2 Plus.
 I'll be updating this repo with any bug reports that i can reproduce and hopefully keep this project going into newer firmware versions released by Creality.
