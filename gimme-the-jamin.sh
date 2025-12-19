@@ -14,6 +14,7 @@ install_feature() {
 
 install_feature better-init
 install_feature skip-setup
+install_feature filament-sync-service
 install_feature moonraker
 install_feature fluidd
 install_feature screws_tilt_adjust
@@ -27,4 +28,3 @@ install_feature macros/start_print
 install_feature macros/overrides
 install_feature webcam-fix
 install_feature resonance-tester
-install_feature filament-sync-service
